@@ -8,7 +8,7 @@ except ImportError:
     import httplib as http_status
 
 print("""
-Control the plasma demo screen via a web service
+Control the pHat HD via a web service
 """)
 
 app = Flask(__name__)
