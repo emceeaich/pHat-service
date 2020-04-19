@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 import subprocess
 from flask import Flask, request, jsonify
@@ -15,7 +15,7 @@ app = Flask(__name__)
 
 @app.route('/', methods=['GET'])
 def index():
-    return "PUT to / to change display\n {\"script\": script} where script is one of " +  ", ".join(scriptController.list())
+    return "PUT the JSON request body {\"script\": script} where script is one of " +  ", ".join(scriptController.list())
 
 class ScriptController():
     _running  = False
